@@ -1,0 +1,9 @@
+clear
+echo "Norminette :"
+norminette
+
+echo -e "\nCompilation :"
+cc -Wall -Wextra -Werror $@
+
+echo -e "\nExecution :"
+./a.out
