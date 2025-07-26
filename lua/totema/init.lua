@@ -6,5 +6,6 @@ require("totema.plugins.telescope")
 require("totema.plugins.lsp-zero")
 require("totema.plugins.treesitter")
 require("totema.plugins.lualine")
+require("totema.plugins.neotree")
 
 require("totema.colorscheme").setup()

@@ -3,7 +3,7 @@ vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.guicursor = {
 	"n-v-c:block",
-	"i:block-blinkwait0-blinkoff1-blinkon1"
+	"i:blinkwait100-blinkoff100-blinkon100"
 }
 
 vim.opt.swapfile = false
