@@ -1,6 +1,10 @@
 -- Vim settings
 vim.opt.number = true
 vim.opt.cursorline = true
+vim.opt.guicursor = {
+	"n-v-c:block",
+	"i:block-blinkwait0-blinkoff1-blinkon1"
+}
 
 vim.opt.swapfile = false
 
