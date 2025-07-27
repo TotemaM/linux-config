@@ -13,5 +13,6 @@ return {
 	white		= "#ffffff",
 	-- Alternative colors
 	mid_green	= "#008000",
-	low_green	= "#001000",
+	mid_orange	= "#b06000",
+	mid_purple	= "#8050aa"
 }
