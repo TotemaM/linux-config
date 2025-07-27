@@ -13,5 +13,5 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = false
 
 -- 42 Header variables
-vim.g.user = "mmichele"
-vim.g.mail = "mmichele@student.s19.be"
+vim.g.user42 = "mmichele"
+vim.g.mail42 = "mmichele@student.s19.be"
