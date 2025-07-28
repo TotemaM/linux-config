@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Installing neovim config
+rm -rf ~/.config/nvim
+cp -r neovim ~/.config/nvim
+
+# Installing bash config
+rm -rf ~/.bashrc
+cp bash/.bashrc ~/.bashrc
+source ~/.bashrc
+
+# Installing fonts (TODO)
+
+# Restart the terminal
+gnome-terminal -- bash
+PPID=$(ps -o ppid= -p $$)
+kill -9 "$PPID"
+
