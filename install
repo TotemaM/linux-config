@@ -7,6 +7,8 @@ cp -r neovim ~/.config/nvim
 # Installing bash config
 rm -rf ~/.bashrc
 cp bash/.bashrc ~/.bashrc
+rm -rf ~/.zshrc
+cp bash/.zshrc ~/.zshrc
 source ~/.bashrc
 
 # Installing fonts
