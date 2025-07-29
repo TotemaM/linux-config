@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    install                                            :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/07/29 22:31:28 by mmichele          #+#    #+#              #
+#    Updated: 2025/07/29 22:32:44 by mmichele         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 #!/bin/bash
 
 # Installing neovim config
@@ -9,9 +21,9 @@ rm -rf ~/.bashrc
 cp bash/.bashrc ~/.bashrc
 rm -rf ~/.zshrc
 cp bash/.zshrc ~/.zshrc
-source ~/.bashrc
 
 # Installing fonts
+mkdir -p ~/.fonts
 rm -rf ~/.fonts/ocra.ttf ~/.fonts/ocra-nf.ttf
 cp fonts/ocra.ttf ~/.fonts/ocra.ttf
 cp fonts/ocra-nf.ttf ~/.fonts/ocra-nf.ttf

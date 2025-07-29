@@ -1,3 +1,15 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                        :::      ::::::::   --
+--   groups.lua                                         :+:      :+:    :+:   --
+--                                                    +:+ +:+         +:+     --
+--   By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+        --
+--                                                +#+#+#+#+#+   +#+           --
+--   Created: 2025/07/29 22:37:30 by mmichele          #+#    #+#             --
+--   Updated: 2025/07/29 23:34:41 by mmichele         ###   ########.fr       --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 local M = {}
 
 local colors = require("totema.colorscheme.palette")
@@ -24,13 +36,14 @@ M.setup = function()
 		Identifier			= { fg = colors.green },
 		Keyword				= { fg = colors.purple },
 		MsgArea				= { fg = colors.green, bg = colors.black },
+		StatusLineNC		= { bg = colors.black },
 			-- :Ex
 		Directory			= { fg = colors.green },
 		-- Neotree
 		NeoTreeDimText		= { fg = colors.green },
 		NeoTreeGitModified	= { fg = colors.orange },
 		-- Lualine
-		StatusLine			= { fg = colors.black, bg = colors.low_green},
+		StatusLine			= { fg = colors.black, bg = colors.black },
 			-- Normal
 		NormalA				= { fg = colors.black, bg = colors.orange },
 		NormalB				= { fg = colors.black, bg = colors.mid_orange },

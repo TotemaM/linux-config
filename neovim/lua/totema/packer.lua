@@ -1,3 +1,15 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                        :::      ::::::::   --
+--   packer.lua                                         :+:      :+:    :+:   --
+--                                                    +:+ +:+         +:+     --
+--   By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+        --
+--                                                +#+#+#+#+#+   +#+           --
+--   Created: 2025/07/29 22:37:56 by mmichele          #+#    #+#             --
+--   Updated: 2025/07/29 22:50:14 by mmichele         ###   ########.fr       --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`

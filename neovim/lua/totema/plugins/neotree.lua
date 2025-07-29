@@ -1,6 +1,21 @@
+-- -------------------------------------------------------------------------- --
+--                                                                            --
+--                                                        :::      ::::::::   --
+--   neotree.lua                                        :+:      :+:    :+:   --
+--                                                    +:+ +:+         +:+     --
+--   By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+        --
+--                                                +#+#+#+#+#+   +#+           --
+--   Created: 2025/07/29 23:00:04 by mmichele          #+#    #+#             --
+--   Updated: 2025/07/29 23:00:12 by mmichele         ###   ########.fr       --
+--                                                                            --
+-- -------------------------------------------------------------------------- --
+
 require('neo-tree').setup({
 	window = {
-		width = "30"
+		width = "30",
+		mappings = {
+			["<space>"] = false
+		}
 	},
 	filesystem = {
 		filtered_items = {
@@ -44,12 +59,13 @@ local function is_neotree_open()
 end
 
 -- Toggle Neo-tree without focus, based on its state.
-vim.keymap.set("n", "<C-t>", function()
+vim.keymap.set("", "<C-t>", function()
 	if is_neotree_open() then
 		vim.cmd("Neotree close")
 	else
-		vim.cmd("Neotree show")
 		set_neotree_width_to_content()
+		vim.cmd("Neotree show")
+		
 	end
 end)
 
