@@ -9,10 +9,12 @@ rm -rf ~/.bashrc
 cp bash/.bashrc ~/.bashrc
 source ~/.bashrc
 
-# Installing fonts (TODO)
+# Installing fonts
+rm -rf ~/.fonts/ocra.ttf ~/.fonts/ocra-nf.ttf
+cp fonts/ocra.ttf ~/.fonts/ocra.ttf
+cp fonts/ocra-nf.ttf ~/.fonts/ocra-nf.ttf
 
 # Restart the terminal
 gnome-terminal -- bash
 PPID=$(ps -o ppid= -p $$)
 kill -9 "$PPID"
-

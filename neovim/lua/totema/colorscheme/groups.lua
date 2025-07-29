@@ -52,7 +52,7 @@ M.setup = function()
 		VisualX				= { fg = colors.purple },
 		VisualY				= { fg = colors.black, bg = colors.mid_purple },
 		VisualZ				= { fg = colors.black, bg = colors.purple },
-		-- LSP / Treesitter
+		-- Treesitter
 		["@variable"]		= { fg = colors.green },
 		["@type.builtin"]	= { fg = colors.orange },
 		["@string.escape"]	= { fg = colors.magenta },

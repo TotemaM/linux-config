@@ -5,7 +5,7 @@ MAIL="mmichele@student.s19.be"
 # When executing nvim command it runs tmux if not allready in tmux
 nvim() {
 	if [ -z "$TMUX" ]; then
-		tmux new-session /usr/local/bin/nvim "$@"
+		tmux new-session /usr/bin/nvim "$@"
 	else
 		command nvim "$@"
 	fi

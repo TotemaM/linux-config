@@ -19,7 +19,7 @@ local function set_neotree_width_to_content()
 		local bufname = vim.api.nvim_buf_get_name(buf)
 		if bufname:match("neo%-tree filesystem") then
 			local lines = vim.api.nvim_buf_get_lines(buf, 0, -1, false)
-			local max_len = 20 -- minimum width
+			local max_len = 30 -- minimum width
 			for _, line in ipairs(lines) do
 				local len = vim.fn.strdisplaywidth(line)
 				if len > max_len then
