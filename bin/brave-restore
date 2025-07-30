@@ -1,24 +1,23 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    .zshrc                                             :+:      :+:    :+:    #
+#    brave-restore                                      :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/07/29 22:33:26 by mmichele          #+#    #+#              #
-#    Updated: 2025/07/30 11:07:35 by mmichele         ###   ########.fr        #
+#    Created: 2025/07/30 11:04:37 by mmichele          #+#    #+#              #
+#    Updated: 2025/07/30 11:16:33 by mmichele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-PS1="%F{green}%n@%m%k%f:%F{blue}%d%f$ "
-# 42 Header variables
-USER="mmichele"
-MAIL="mmichele@student.s19.be"
-# Running tmux before nvim
-nvim() {
-	if [ -z "$TMUX" ]; then
-		tmux new-session /usr/bin/nvim "$@"
-	else
-		command nvim "$@"
-	fi
-}
+#!/bin/bash
+mkdir ~/_tmp
+
+cp -r ~/.config/BraveSoftware/Brave-Browser/Default/Bookmarks ~/_tmp
+cp -r ~/.config/BraveSoftware/Brave-Browser/Default/Preferences ~/_tmp
+
+rm -rf ~/.config/BraveSoftware/Brave-Browser/Default
+
+mv ~/_tmp ~/.config/BraveSoftware/Brave-Browser/Default
+
+rm -rf ~/_tmp

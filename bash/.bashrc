@@ -6,7 +6,7 @@
 #    By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/29 22:33:20 by mmichele          #+#    #+#              #
-#    Updated: 2025/07/29 22:33:23 by mmichele         ###   ########.fr        #
+#    Updated: 2025/07/30 11:02:15 by mmichele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ PS1="\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ "
 # 42 Header variables
 USER="mmichele"
 MAIL="mmichele@student.s19.be"
-# When executing nvim command it runs tmux if not allready in tmux
+# Executing tmux beforenvim
 nvim() {
 	if [ -z "$TMUX" ]; then
 		tmux new-session /usr/bin/nvim "$@"
