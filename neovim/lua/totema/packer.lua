@@ -6,7 +6,7 @@
 --   By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2025/07/29 22:37:56 by mmichele          #+#    #+#             --
---   Updated: 2025/07/29 22:50:14 by mmichele         ###   ########.fr       --
+--   Updated: 2025/08/03 23:29:19 by mmichele         ###   ########.fr       --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -37,7 +37,7 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 	-- Neotree
-	use({
+	use {
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v3.x",
 		requires = {
@@ -45,5 +45,12 @@ return require('packer').startup(function(use)
 			"MunifTanjim/nui.nvim",
 			"nvim-tree/nvim-web-devicons", -- optional, but recommended
 		}
-	})
+	}
+	-- Indent guide
+	use {
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl"
+	}
+	-- Column guide
+	use "lukas-reineke/virt-column.nvim"
 end)
