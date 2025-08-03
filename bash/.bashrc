@@ -6,7 +6,7 @@
 #    By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/29 22:33:20 by mmichele          #+#    #+#              #
-#    Updated: 2025/07/30 11:02:15 by mmichele         ###   ########.fr        #
+#    Updated: 2025/08/03 11:16:43 by mmichele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,3 +26,7 @@ nvim() {
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+# Better command history control
+HISTCONTROL=ignoreboth
+# Set colors for ls
+alias ls="ls --color=auto"
