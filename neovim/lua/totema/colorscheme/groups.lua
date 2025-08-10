@@ -6,7 +6,7 @@
 --   By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2025/08/03 23:16:11 by mmichele          #+#    #+#             --
---   Updated: 2025/08/03 23:46:51 by mmichele         ###   ########.fr       --
+--   Updated: 2025/08/10 21:29:52 by mmichele         ###   ########.fr       --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -70,6 +70,10 @@ M.setup = function()
 		["@string.escape"]	= { fg = colors.magenta },
 		-- c
 		["@number.c"]		= { fg = colors.magenta },
+		-- LaTeX
+		texDocType			= { fg = colors.purple },
+		texSection			= { fg = colors.purple },
+		texStatement		= { fg = colors.blue }
 	}
 end
 
