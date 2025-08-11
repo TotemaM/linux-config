@@ -6,7 +6,7 @@
 --   By: mmichele <mmichele@student.s19.be>         +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2025/07/29 22:38:15 by mmichele          #+#    #+#             --
---   Updated: 2025/08/03 21:59:52 by mmichele         ###   ########.fr       --
+--   Updated: 2025/08/11 21:00:45 by mmichele         ###   ########.fr       --
 --                                                                            --
 -- -------------------------------------------------------------------------- --
 
@@ -24,6 +24,8 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = false
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.guicursor = "n-v-c:block,i:block-blinkon100-blinkoff100"
 
 -- 42 Header variables
 vim.g.user42 = "mmichele"
