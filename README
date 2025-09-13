@@ -3,14 +3,15 @@ sudo apt install cmake
 
 # Install latest neovim from source
 git clone git@github.com:neovim/neovim.git
-git checkout nightly
-make
-make install
+sudo make
+sudo make install
 
-# Download latest luarocks tar.gz file from website
+# Install Packer
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+# Download and install Lua and LuaRocks
 sudo apt install lua5.1 liblua5.1-dev
-tar -xf luarocks_dl.tar.gz
-cd luarocks_dl
-./configure
-make
-make install
+wget https://luarocks.org/releases/luarocks-3.12.2.tar.gz
+tar zxpf luarocks-3.12.2.tar.gz
+cd luarocks-3.12.2
+./configure && make && sudo make install
